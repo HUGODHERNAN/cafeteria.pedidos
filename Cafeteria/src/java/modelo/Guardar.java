@@ -22,10 +22,9 @@ public class Guardar {
             Class.forName("com.mysql.cj.jdbc.Driver");
 
             // 2. Establecer conexión
-            String url = "jdbc:mysql://localhost:3306/cafeteria"; // Asegúrate que tu BD se llama así
-            String user = "root"; // Cambia por tu usuario de MySQL
-            String password = ""; // Cambia por tu contraseña si tienes
-
+            String url = "jdbc:mysql://localhost:3306/cafeteria";
+            String user = "root"; 
+            String password = ""; 
             conn = DriverManager.getConnection(url, user, password);
 
             // 3. Preparar consulta SQL
